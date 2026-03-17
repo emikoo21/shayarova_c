@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <windows.h>
+
+int main() {
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+    int a, b = 1;
+    scanf("%d", &a);
+    for (int i = 3; i < a; i +=3) {
+        b *= i;
+    }
+    printf("%d\n", b);
+    return 0;
+}
