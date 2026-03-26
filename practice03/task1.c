@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <windows.h>
+
+int main() {
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+    int a [10];
+    int i;
+    for (i = 0; i < 10; i++) {
+        scanf("%d", &a[i]);
+    }
+    for (i = 9; i >= 0; i--) {
+        printf("%d ", a[i]);
+    }
+    printf("\n");
+    return 0;
+}
