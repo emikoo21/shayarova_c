@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+    int num;
+    printf("Введите трехзначное число: ");
+    scanf("%d", &num);
+    if (num < 0) num = -num;
+    int hundreds = num / 100;
+    int tens = (num / 10) % 10;
+    int units = num % 10;
+    printf("Число: %d\n", num);
+    printf("Сотни: %d\n", hundreds);
+    printf("Десятки: %d\n", tens);
+    printf("Единицы: %d\n", units);
+    return 0;
+}
